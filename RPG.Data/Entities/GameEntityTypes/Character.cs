@@ -12,10 +12,5 @@
 
         public DateTime DateOfCreation { get; set; } = DateTime.Now;
 
-        public override void Setup()
-        {
-            base.Setup();
-        }
-
     }
 }

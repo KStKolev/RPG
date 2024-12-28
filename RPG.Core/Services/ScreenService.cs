@@ -11,7 +11,6 @@
         private readonly IMainMenuService mainMenuService;
         private readonly ICharacterSelectService characterSelectionService;
         private readonly IInGameService gameService;
-        private Screen screen;
 
         public ScreenService(IMainMenuService _mainMenuService, 
             ICharacterSelectService _characterSelectionService, IInGameService _gameService)
@@ -23,7 +22,7 @@
 
         public void ManageGameScreen()
         {
-            screen = Screen.MainMenu;
+            Screen screen = Screen.MainMenu;
             Character character = new Character();
 
             while (screen != Screen.Exit)

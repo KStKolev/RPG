@@ -1,6 +1,6 @@
 ﻿namespace RPG.Data.Entities.GameEntityTypes
 {
-    using RPG.Utilities.DataConstants.CharacterConstants;
+    using RPG.Utilities.DataConstants.EntityConstants;
 
     public class Monster : GameEntity
     {
@@ -12,11 +12,6 @@
             base.Intelligence = SetRandomInitialStats();
             base.Range = MonsterConstants.INITIAL_RANGE;
             base.CharacterSymbol = MonsterConstants.CHARACTER_SYMBOL;
-        }
-
-        public override void Setup()
-        {
-            base.Setup();
         }
 
         private int SetRandomInitialStats()

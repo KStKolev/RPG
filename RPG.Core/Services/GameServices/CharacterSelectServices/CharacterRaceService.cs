@@ -33,7 +33,7 @@
 
         private void PrintCharacterRaceOptions()
         {
-            Console.WriteLine(CharacterSelectConstants.CHOOSE_Character_TYPE);
+            Console.WriteLine(CharacterSelectConstants.CHOOSE_CHARACTER_TYPE);
             Console.WriteLine(CharacterSelectConstants.OPTIONS);
             Console.WriteLine(CharacterSelectConstants.WARRIOR_TYPE);
             Console.WriteLine(CharacterSelectConstants.ARCHER_TYPE);

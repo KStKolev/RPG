@@ -1,6 +1,7 @@
 ﻿namespace RPG.Core.Services
 {
     using RPG.Core.Interfaces;
+
     public class UserInputService : IUserInputService
     {
 

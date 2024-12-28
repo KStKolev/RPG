@@ -5,7 +5,7 @@
     using RPG.Data;
     using RPG.Data.Entities;
     using RPG.Data.Entities.GameEntityTypes;
-    using RPG.Utilities.DataConstants.CharacterConstants;
+    using RPG.Utilities.DataConstants.EntityConstants;
     using RPG.Utilities.DataConstants.ScreenConstants;
 
     public class CharacterTurnService : ICharacterTurnService

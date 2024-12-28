@@ -3,7 +3,7 @@
     public class CharacterSelectConstants
     {
 
-        public const string CHOOSE_Character_TYPE = "Choose character type:";
+        public const string CHOOSE_CHARACTER_TYPE = "Choose character type:";
         public const string OPTIONS = "Options:";
         public const string WARRIOR_TYPE = "1) Warrior";
         public const string ARCHER_TYPE = "2) Archer";

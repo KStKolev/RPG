@@ -1,4 +1,4 @@
-﻿namespace RPG.Utilities.DataConstants.CharacterConstants
+﻿namespace RPG.Utilities.DataConstants.EntityConstants
 {
     public class MonsterConstants
     {

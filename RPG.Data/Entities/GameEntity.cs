@@ -1,6 +1,7 @@
 ﻿namespace RPG.Data.Entities
 {
     using RPG.Data.Entities.Interfaces;
+    using RPG.Utilities.DataConstants.EntityConstants;
     using System.ComponentModel.DataAnnotations.Schema;
 
     public class GameEntity : IGameEntity
@@ -28,11 +29,15 @@
         [NotMapped]
         public int FieldColumn { get; set; }
 
-        public virtual void Setup()
+        public void Setup()
         {
-            this.Health = this.Strength * 5;
-            this.Mana = this.Intelligence * 3;
-            this.Damage = this.Agility * 2;
+            const int STRENGTH_MULTIPLIER = StatConstants.STRENGTH_SETUP_MULTIPLIER;
+            const int INTELLIGENCE_MULTIPLIER = StatConstants.INTELLIGENCE_SETUP_MULTIPLIER;
+            const int AGILITY_MULTIPLIER = StatConstants.AGILITY_SETUP_MULTIPLIER;
+
+            this.Health = this.Strength * STRENGTH_MULTIPLIER;
+            this.Mana = this.Intelligence * INTELLIGENCE_MULTIPLIER;
+            this.Damage = this.Agility * AGILITY_MULTIPLIER;
         }
 
     }
